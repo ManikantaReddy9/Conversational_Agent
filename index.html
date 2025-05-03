@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversational Agent</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://aka.ms/csspeech/jsbrowserpackageraw"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <img src="./9f8b79ab6e24df9cf6fea5be90028533.png" alt="logo">
+      <div class="window-controls">
+        <span class="icon" title="Refresh">&#x21bb;</span>
+        <span class="icon Micon" title="Minimize">&#x2212;</span>
+        <span class="icon" title="Close">&#x2715;</span>
+      </div>      
+    </div>
+    <div class="chat-box" id="chat-box">
+      <!-- Messages will appear here -->
+      <div id="suggestion-footer"></div>
+    </div>    
+
+    <div class="chat-input-area">
+      <button id="mic-btn">🎤</button>
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+  <div id="TWines" class="wine-card" style="display: none;">
+    <p class="intro-text">
+      Here are some experiences you shouldn't miss to 
+      <strong>"Join us at our Halleck Estate for a sublime tasting experience."</strong>
+    </p>
+    <div class="wine-card-content">
+      <div class="wine-img-wrapper">
+        <img src="./fae06e1c30db5cddc38a78400a7b2a3b.png" alt="Sonoma Wine Tasting">
+        <div class="price-tag">$65/person</div>
+        <div class="wine-title">Sonoma Wine Tasting</div>
+      </div>
+      <ul class="wine-details">
+        <li>20 guests max per wine tasting</li>
+        <li>Open Thursday thru Sunday</li>
+        <li>Seated wine tastings at 11 am & 3 pm</li>
+        <li>Reservations Required</li>
+        <li>$78pp for groups of 7-12</li>
+      </ul>
+      <button class="reserve-btn">Reserve</button>
+    </div>
+  </div>
+  
+  <script src="index.js"defer></script>
+</body>
+</html>
+
